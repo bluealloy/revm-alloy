@@ -1,0 +1,21 @@
+[package]
+name = "revm-alloy"
+version = "0.1.0"
+edition = "2021"
+license = "MIT or Apache-2.0"
+authors = ["Dragan Rakita <dragan0rakita@gmail.com>"]
+categories = ["no-std"]
+keywords = ["revm", "evm", "ethereum", "blockchain", "no_std"]
+repository = "https://github.com/bluealloy/revm-alloy"
+documentation = "https://bluealloy.github.io/revm/"
+
+[dependencies]
+# alloy
+alloy-consensus = { version = "0.9.0", features = ["k256"] }
+
+# revm
+revm-context-interface = { git = "https://github.com/bluealloy/revm.git", rev = "b6b81e57" }
+revm-primitives = { git = "https://github.com/bluealloy/revm.git", rev = "b6b81e57" }
+
+# utils
+derive_more = "1.0"
